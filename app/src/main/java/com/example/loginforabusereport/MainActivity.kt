@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_home_.*
 import kotlinx.android.synthetic.main.fragment_o_t_p_login.*
 
-class MainActivity : AppCompatActivity(), Communicator {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,13 +22,8 @@ class MainActivity : AppCompatActivity(), Communicator {
         }
     }
 
-    override fun passData(editText: String) {
 
-        val transaction= this.supportFragmentManager.beginTransaction()
-        val fragOTP=OTPLogin()
-        transaction.replace(R.id.Home_Frag, fragOTP)
-        transaction.commit()
-    }
+
 
 
 }

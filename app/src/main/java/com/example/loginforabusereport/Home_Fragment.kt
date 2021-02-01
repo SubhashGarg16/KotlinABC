@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import kotlinx.android.synthetic.main.fragment_home_.*
 import kotlinx.android.synthetic.main.fragment_home_.view.*
+import kotlinx.android.synthetic.main.fragment_o_t_p_login.*
 import kotlinx.android.synthetic.main.fragment_o_t_p_login.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -44,18 +46,26 @@ class Home_Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        val view=inflater.inflate(R.layout.fragment_home_, container, false)
-        btn_1.setOnClickListener(view.setOnClickListener()) {
+        val v=inflater.inflate(R.layout.fragment_home_, container, false)
+        val button1=v.findViewById<Button>(R.id.btn_1)
 
-        }
-        return view
+      button1.setOnClickListener {
+          val fragOTP=otp_page
+          val manager= fragmentManager
+          val frag_transaction= manager.beginTransaction()
+          frag_transaction.replace(R.id.Home_Frag, fragOTP)
+          frag_transaction.commit()
+
+
+      }
+        return v
 
     }
 
 
 }
 
-private fun View.setOnClickListener() {
 
 
-}
+
+

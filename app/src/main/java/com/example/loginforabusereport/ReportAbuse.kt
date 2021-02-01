@@ -38,6 +38,7 @@ class ReportAbuse : Fragment() {
                 Toast.makeText(this, rd_2.text.toString(), Toast.LENGTH_LONG).show()
             if(checkedId==R.id.rd_3)
                 Toast.makeText(this, rd_3.text.toString(), Toast.LENGTH_LONG).show()
+
         }
     }
 

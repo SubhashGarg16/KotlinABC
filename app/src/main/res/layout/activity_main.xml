@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:gravity="center">
+    
+    <FrameLayout
+        android:layout_width=""
+        android:layout_height=""
 
 
 
