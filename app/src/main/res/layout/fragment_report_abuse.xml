@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportAbuse"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/acme"
+        android:hint="Full name"
+        android:inputType="text"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ed_mobile"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="Mobile Number"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ed_description"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="Description"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme"
+        android:autofillHints="" />
+
+
+
+    <EditText
+        android:id="@+id/ed_address"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="true"
+        android:hint="Current Address"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme"
+        android:autofillHints="" />
+    <RadioGroup
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/radioGRP_1">
+
+        <RadioButton
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:text="accident"
+            android:fontFamily="@font/acme"
+            android:id="@+id/rd_1"/>
+
+        <RadioButton
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:text="abuse"
+            android:fontFamily="@font/acme"
+            android:id="@+id/rd_2"/>
+
+        <RadioButton
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:text="others"
+            android:fontFamily="@font/acme"
+             android:id="@+id/rd_3"/>
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:paddingTop="5dp"
+        android:switchMinWidth="56dp"
+        android:text="Add Location"
+        android:fontFamily="@font/acme"
+        android:textOff="off"
+        android:textOn="on"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ed_location"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/acme"
+        android:inputType="text"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="20sp"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_corner_flayout"
+        android:fontFamily="@font/acme"
+        android:text="next"
+        android:textColor="@color/white"
+        app:backgroundTint="#43A047" />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_corner_flayout"
+        android:text="@android:string/cancel"
+        android:fontFamily="@font/acme"
+        android:textColor="@color/white"
+        app:backgroundTint="#43A047"/>
+
+    <CheckBox
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:text="Agree to terms and condition"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPLogin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/otp_page">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign In with OTP"
+    android:textSize="17sp"
+    android:fontFamily="@font/acme"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Mobile Number"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/acme"
+        android:layout_marginTop="40sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_flayout"
+        android:text="Send OTP"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:backgroundTint="#43A047"
+        android:layout_marginTop="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="40sp"
+            android:layout_height="45sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="LableFor"/>
+
+        <EditText
+            android:layout_width="40sp"
+            android:layout_height="45sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="LableFor"
+            android:layout_marginLeft="4dp"/>
+
+        <EditText
+            android:layout_width="40sp"
+            android:layout_height="45sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="LableFor"
+            android:layout_marginLeft="4dp"/>
+
+        <EditText
+            android:layout_width="40sp"
+            android:layout_height="45sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            tools:ignore="LableFor"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_flayout"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:fontFamily="@font/acme"
+        app:backgroundTint="#43A047"
+        android:layout_marginTop="20sp" />
+
+
+
+</LinearLayout>
